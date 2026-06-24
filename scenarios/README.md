@@ -21,6 +21,9 @@ Each scenario is composed of the following folders:
 
 - `antennapatterns`: symbolic link to the antenna patterns to use. Original folder is located in `data/additional-input/antennapatterns`
 - `beams`: forward and return configuration files, used to decribe beams
+  - `fwdConf.txt`: Forward link (Gateway > Satellite > User terminal)
+  - `rtnConf.txt`: Return link (User terminal > Satellite > Gateway)
+  - Columns: Beam ID, access link frequency ID, gateway ID (change in runtime), feeder link frequency ID
 - `beamhopping`: beam hopping configuration files. Beam hopping is used only if this folder is present
 - `positions`: contains positions of GWs and UTs (more UTs can be added via `SimulationHelper` and `GroupHelper`). Contains also description of satellite position: either GEO satellite position, or TLE + list of ISL + simulation start date
 - `standard`: standard to use. Can be either DVB or LORA
